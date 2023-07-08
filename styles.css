@@ -1,0 +1,50 @@
+/*
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 0.875rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(228, 12%, 48%);
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.83em;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-img {
+    width: 100%;
+    height: 30vh;
+}
+
+.product-type {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-name {
+    color: hsl(212, 21%, 14%);
+    font-size: 2.5rem;
+}
+
+.product-description {
+    font-size: 1.286rem;
+    font-weight: 500;
+}
+
+button {
+    width: 85%;
+    padding: 0.714em;
+    background-color: hsl(158, 36%, 37%);
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 0.83em;
+    color: hsl(0, 0%, 100%);
+}
