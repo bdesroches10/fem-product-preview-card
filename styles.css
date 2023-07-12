@@ -10,8 +10,12 @@
 html {
     background-color: hsl(30, 38%, 92%);
     font-size: 0.875rem;
-    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
+}
+
+body {
+    margin: 1.143em;
 }
 
 main {
@@ -21,30 +25,82 @@ main {
     flex-direction: column;
 }
 
-.display-img {
-    width: 100%;
+.product-img {
+    width: 100vw;
     height: 30vh;
 }
 
+.main-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.83em 0.83em 0 0;
+}
+
+.display-info {
+    margin: 1.5em;
+}
+
 .product-type {
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;;
 }
 
 .product-name {
+    margin: 0.25em 0 0.45em 0;
     color: hsl(212, 21%, 14%);
-    font-size: 2.5rem;
+    font-family: 'Fraunces', serif;
+    font-size: 2.25rem;
 }
 
 .product-description {
-    font-size: 1.286rem;
+    font-size: 1.03rem;
     font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Solution to vertical align two elements */
+.price-wrapper {
+    width: 100%;
+}
+
+.discount-price, .regular-price { 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.discount-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2.429rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.regular-price {
+    margin-left: 2em;
+    text-decoration: line-through;
 }
 
 button {
-    width: 85%;
-    padding: 0.714em;
+    margin-top: 1.25em;
+    width: 100%;
+    padding: 1em;
     background-color: hsl(158, 36%, 37%);
     border: 1px solid hsl(158, 36%, 37%);
     border-radius: 0.83em;
     color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+label {
+    margin-left: 0.75em;
+    font-size: 1.07rem;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.cart-img {
+    display: inline-block;
+    vertical-align: middle;
 }
