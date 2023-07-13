@@ -8,6 +8,8 @@
 }
 
 html {
+    width: 100vw;
+    height: 100vh;
     background-color: hsl(30, 38%, 92%);
     font-size: 0.875rem;
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-    margin: 1.143em;
+    margin: 2em 1.143em;
 }
 
 main {
@@ -27,7 +29,6 @@ main {
 
 .product-img {
     width: 100vw;
-    height: 30vh;
 }
 
 .main-img {
@@ -37,7 +38,7 @@ main {
 }
 
 .display-info {
-    margin: 1.5em;
+    margin: 1.5em 1.75em;
 }
 
 .product-type {
@@ -46,22 +47,22 @@ main {
 }
 
 .product-name {
-    margin: 0.25em 0 0.45em 0;
+    margin: 0.5em 0;
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
-    font-size: 2.25rem;
+    font-size: 2.286rem;
 }
 
 .product-description {
-    font-size: 1.03rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: 1em;
+    line-height: 1.6;
 }
 
 /* Solution to vertical align two elements */
 .price-wrapper {
     width: 100%;
+    margin: 2em 0;
 }
 
 .discount-price, .regular-price { 
@@ -71,7 +72,7 @@ main {
 
 .discount-price {
     font-family: 'Fraunces', serif;
-    font-size: 2.429rem;
+    font-size: 2.286rem;
     color: hsl(158, 36%, 37%);
 }
 
@@ -81,7 +82,6 @@ main {
 }
 
 button {
-    margin-top: 1.25em;
     width: 100%;
     padding: 1em;
     background-color: hsl(158, 36%, 37%);
@@ -90,6 +90,9 @@ button {
     color: hsl(0, 0%, 100%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+button:active {
+    background-color: hsl(158, 35%, 17%);
 }
 
 label {
@@ -103,4 +106,39 @@ label {
 .cart-img {
     display: inline-block;
     vertical-align: middle;
+}
+
+@media screen and (min-width: 760px) {
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 46.429em;
+        max-height: 32.857em;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .display-img {
+        width: 60%;
+    }
+    
+    .display-info {
+        width: 40%;
+        margin: 0.5em 0 0 0;
+        padding: 1.5em 2.5em;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.83em 0 0 0.83em;
+    }
 }
